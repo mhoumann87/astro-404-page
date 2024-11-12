@@ -1,9 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import bgImage from "../assets/bg.png";
+import { Icon } from "astro/runtime/client/dev-toolbar/ui-library/icons.js";
 ---
 
 <section>
-			<Image src={bgImage} alt="" format="avif" />
-
+	<Image src={bgImage} alt="" format="avif" />
+  <article class="flex justify-between">
+    <Icon name="logo" width="128" height="24" />
+  </article>
 </section>
