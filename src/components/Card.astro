@@ -1,12 +1,27 @@
 ---
 import { Image } from "astro:assets";
 import bgImage from "../assets/bg.png";
-import { Icon } from "astro/runtime/client/dev-toolbar/ui-library/icons.js";
+import { Icon } from 'astro-icon/components';
+import AstroLink from "./AstroLink.astro";
 ---
 
-<section>
-	<Image src={bgImage} alt="" format="avif" />
-  <article class="flex justify-between">
-    <Icon name="logo" width="128" height="24" />
+<section class="bg-background text-text flex flex-col lg:flex-row">
+	<Image 
+    src={bgImage} 
+    alt="" 
+    format="avif" 
+    class="max-h-[50vh] lg:max-h-screen object-cover basis-1/3" />
+  <article class="flex flex-col gap-16 items-center justify-between p-8">
+    <Icon name="logo" width={128} height={24} />
+    <div class="grid gap-12 text-center place-items-center">
+      <div class="gap-2">
+      <h1 class="font-black text-4xl text-balanced">Opps! You have discovered a world not found!</h1>
+      <p class="text-lg text-pretty">
+        Home is just a click away. Let's go back and continue our regular life.
+      </p>
+      </div>
+      <AstroLink href="/">Go To Home</AstroLink>
+    </div>
+    <p>Error code 404</p>
   </article>
 </section>
