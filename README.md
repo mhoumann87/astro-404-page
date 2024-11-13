@@ -1,4 +1,17 @@
-# Astro Starter Kit: Minimal
+# 404 page with Astro
+
+[Youtube tutorial](https://youtu.be/zRVhCxLsBeg?si=avEudNRtL54gRJWa)
+
+### Using:
+* Astro
+* Tailwind
+* Astro Image
+* Astro Icon
+
+---
+
+
+## Astro Starter Kit: Minimal
 
 ```sh
 npm create astro@latest -- --template minimal
